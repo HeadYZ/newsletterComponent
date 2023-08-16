@@ -118,7 +118,20 @@ body {
 
 .overlay__icon {
   width: 12%;
-  margin-top: 10vh;
+  margin-top: 20vh;
+}
+
+.overlay__h2 {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+
+.overlay__email {
+  font-weight: 700;
+}
+
+.overlay__btn {
+  margin-top: 30vh;
 }
 
 @media (min-width: 1440px) {
@@ -134,7 +147,7 @@ body {
     cursor: pointer;
     padding: 1.4em 2rem;
     font-size: 1.6rem;
-    transition: all .3s;
+    transition: box-shadow .3s;
     position: relative;
   }
 
@@ -204,43 +217,43 @@ body {
     font-size: 1.6rem;
     left: calc(100% - 150px);
   }
-}
 
-.overlay {
-  z-index: 10;
-  border-radius: 3rem;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 35%;
-  height: 40vh;
-  padding: 4rem;
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+  .overlay {
+    z-index: 10;
+    border-radius: 3rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 40vh;
+    padding: 4rem;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
-.overlay__icon {
-  margin-top: 0;
-}
+  .overlay__icon {
+    margin-top: 0;
+  }
 
-.overlay__h2 {
-  margin: 0;
-  font-size: 6rem;
-}
+  .overlay__h2 {
+    margin: 0;
+    font-size: 6rem;
+  }
 
-.overlay__text {
-  font-size: 1.9rem;
-}
+  .overlay__text {
+    font-size: 1.9rem;
+  }
 
-.overlay__email {
-  font-weight: 700;
-}
+  .overlay__email {
+    font-weight: 700;
+  }
 
-.overlay__btn {
-  margin-top: 0;
+  .overlay__btn {
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=index.40963021.css.map */
