@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/sass/main.scss">
+    <script type="module" defer src="./src/js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="subscribe">
+            <div class="subscribe__image"></div>
+            <div class="subscribe__content">
+                <h1 class="subscribe__h1">Stay updated!</h1>
+                <p class="subscribe__text">Join 60,000+ product managers receiving monthly updated on:</p>
+                <ul class="subscribe__list subscribe__text">
+                    <li class="subscribe__list-item"><img src="./src/images/icon-list.svg" class="subscribe__list-icon"
+                            alt="success icon">
+                        <p>Product
+                            discovery and building what
+                            matters</p>
+                    </li>
+                    <li class="subscribe__list-item"><img src="./src/images/icon-list.svg" class="subscribe__list-icon"
+                            alt="success icon">
+                        <p>Measuring
+                            to ensure updates are a
+                            success</p>
+                    </li>
+                    <li class="subscribe__list-item"><img src="./src/images/icon-list.svg" class="subscribe__list-icon"
+                            alt="success icon">
+                        <p>And much
+                            more!</p>
+                    </li>
+                </ul>
+                <form class="subscribe__form">
+                    <label for="email" class="subscribe__label">Email adress</label>
+                    <input type="email" class="subscribe__input" placeholder="email@company.com">
+                    <button class="btn">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+        </section>
+        <div class="overlay">
+            <img src="./src/images/icon-success.svg" class="overlay__icon" alt="icon success">
+            <h2 class="overlay__h2">Thanks for subscribing!</h2>
+            <p class="overlay__text">A confirmation email has been sent to <span
+                    class="overlay__email">ash@loremcopany.com.</span> Please open it and click the
+                button inside to confirm your subscription.</p>
+            <button class="overlay__btn btn">Dismiss message</button>
+        </div>
+    </main>
+
+    <div class="cos"></div>
+</body>
+
+</html>

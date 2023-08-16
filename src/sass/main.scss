@@ -1,0 +1,129 @@
+@use '_colors.scss' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	background-color: $charcoal-grey;
+}
+
+.btn {
+	width: 100%;
+	padding: 1.4rem 2rem;
+	background: $dark-slate-grey;
+	// background-color: $dark-slate-grey;
+	font-weight: 700;
+	color: $white;
+	border: none;
+	border-radius: 0.7rem;
+}
+
+.subscribe {
+	height: 100vh;
+	color: $dark-slate-grey;
+	background-color: $white;
+
+	&__image {
+		height: 40vh;
+		background-image: url('../images/illustration-sign-up-mobile.svg');
+		border-bottom-right-radius: 2rem;
+		border-bottom-left-radius: 2rem;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		gap: 2rem;
+		height: 60vh;
+		padding: 2rem;
+	}
+	&__h1 {
+		margin-top: 1rem;
+		font-size: 3rem;
+	}
+	&__text {
+		font-size: 1.6rem;
+	}
+	&__list {
+		list-style-type: none;
+		&-item {
+			display: flex;
+			gap: 2rem;
+			margin-bottom: 1rem;
+		}
+		&-icon {
+			align-self: flex-start;
+			width: 6%;
+		}
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__label {
+		position: relative;
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	&__input {
+		margin: 1rem 0 2rem;
+		padding: 1.4rem 2rem;
+		border-radius: 0.5rem;
+		border: 1px solid $grey;
+	}
+	&__form.error &__input {
+		background-color: $bg-tomato;
+		border: 1px solid $tomato;
+	}
+	&__form.error &__label::after {
+		content: 'Valid email required';
+		position: absolute;
+		top: 0;
+		left: calc(100vw - 150px);
+		font-size: 1.2rem;
+		color: $tomato;
+	}
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	padding: 3rem;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: $white;
+	color: $dark-slate-grey;
+	z-index: 10;
+	&__icon {
+		margin-top: 10vh;
+		width: 12%;
+	}
+	&__h2 {
+		font-size: 3rem;
+		margin: 2rem 0;
+	}
+	&__email {
+		font-weight: 700;
+	}
+	&__btn {
+		margin-top: 43vh;
+	}
+}
+
+@import '_large.scss';
