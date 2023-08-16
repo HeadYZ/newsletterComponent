@@ -1,0 +1,138 @@
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+}
+
+.btn {
+  color: #fff;
+  background-color: #242742;
+  border: none;
+  border-radius: .5rem;
+  width: 100%;
+  padding: 1.4rem 2rem;
+  font-weight: 700;
+}
+
+.subscribe {
+  color: #242742;
+  height: 100vh;
+}
+
+.subscribe__image {
+  background-image: url("illustration-sign-up-mobile.360fefdd.d9054d29.svg");
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  height: 40vh;
+}
+
+.subscribe__content {
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+  height: 60vh;
+  padding: 2rem;
+  display: flex;
+}
+
+.subscribe__h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+.subscribe__text {
+  font-size: 1.6rem;
+}
+
+.subscribe__list {
+  list-style-type: none;
+}
+
+.subscribe__list-item {
+  gap: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.subscribe__list-icon {
+  align-self: flex-start;
+  width: 6%;
+}
+
+.subscribe__form {
+  flex-direction: column;
+  display: flex;
+}
+
+.subscribe__label {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.subscribe__input {
+  border: 1px solid #9294a0;
+  border-radius: .5rem;
+  margin: 1rem 0 2rem;
+  padding: 1.4rem 2rem;
+  position: relative;
+}
+
+.subscribe__form.error .subscribe__input {
+  background-color: rgba(255, 98, 87, .1);
+  border: 1px solid #ff6257;
+}
+
+.subscribe__input:after {
+  content: " <- EXCITING!";
+  color: #ff6257;
+  width: 220px;
+  height: 220px;
+  font-size: 2rem;
+  display: block;
+}
+
+.overlay {
+  color: #242742;
+  z-index: 10;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 3rem;
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+.overlay__icon {
+  width: 12%;
+  margin-top: 10vh;
+}
+
+.overlay__h2 {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+
+.overlay__email {
+  font-weight: 700;
+}
+
+.overlay__btn {
+  margin-top: 43vh;
+}
+
+/*# sourceMappingURL=index.fff3f0ec.css.map */
